@@ -6,8 +6,7 @@ class ApplicationsController < ApplicationController
       @search_pets = Pet.search_by_name(params[:pet_name]) if params[:pet_name].present?
     end
     if @application.pet_description != "n/a"
-      @application.status = "Pending"
-        
+      @application.update(status: "Pending")
   end
 end
 

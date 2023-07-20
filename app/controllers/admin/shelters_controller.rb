@@ -5,5 +5,6 @@ class Admin::SheltersController < ApplicationController
     @shelters_with_pending_apps = Shelter.pending_applications
    @applications = Application.pending_shelters_application
   
+  
   end
 end
