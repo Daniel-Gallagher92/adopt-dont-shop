@@ -12,14 +12,14 @@
   <% @shelters_with_pending_apps.each do |pending| %>
     <ul>
       <li><%= pending.name %></li>
-      
+       <% end %>
       <% @applications.each do |application| %>
         <ul>  
           <li> <%= link_to application.name, "/admin/applications/#{application.id}" %> </li> 
         </ul>
       <% end %>
     </ul>
-  <% end %>
+ 
 </div>
 
 
